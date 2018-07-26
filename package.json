@@ -1,0 +1,17 @@
+{
+  "name": "blogapi",
+  "version": "1.0.0",
+  "description": "BlogAPI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Sergey Ukhlivanov",
+  "license": "ISC",
+  "dependencies": {
+    "Express": "^3.0.1",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "uuid": "^3.3.2"
+  }
+}

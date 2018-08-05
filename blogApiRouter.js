@@ -16,13 +16,13 @@ router.get('/', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   console.log(req.params);
+  //Method Delete from model
   BlogPosts.delete(req.params.id);
   console.log(`Deleted blog list item \`${req.params.ID}\``);
   res.status(204).end();
 });
 
 router.post('/', jsonParser, (req, res) => {
-  // ensure `name` and `budget` are in request body
   console.log(req.body);
   const requiredFields = ['title', 'content', 'author', 'publishDate'];
   for (let i=0; i<requiredFields.length; i++) {
@@ -38,11 +38,13 @@ router.post('/', jsonParser, (req, res) => {
 });
 
 router.put('/:id', jsonParser, (req, res) => {
-  const requiredFields = ['title', 'content', 'author', 'publishDate'];
+  console.log("LOOOOOG" + "  " + req.body);
+  const requiredFields = ['id', 'title', 'content', 'author', 'publishDate'];
   for (let i=0; i<requiredFields.length; i++) {
     const field = requiredFields[i];
     if (!(field in req.body)) {
       const message = `Missing \`${field}\` in request body`
+      console.log("LOOOOOG::::::::::")
       console.error(message);
       return res.status(400).send(message);
     }
@@ -55,14 +57,16 @@ router.put('/:id', jsonParser, (req, res) => {
     return res.status(400).send(message);
   }
   console.log(`Updating blog list item \`${req.params.id}\``);
-  const updatedItem = BlogPosts.update({
+  const item = BlogPosts.update({
     id: req.params.id,
-    title:req.body.title,
-    author:req.body.author,
-    content:req.body.content,
-    publishDate:req.body.publishDate
+    title: req.body.title,
+    author: req.body.author,
+    content: req.body.content,
+    publishDate: req.body.publishDate
   });
-  res.status(204).end();
+  console.log("ITEM" + "  " + item);
+  
+  res.status(204).json(item);
 })
 
 module.exports = router;

@@ -4,14 +4,31 @@
   "description": "BlogAPI",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha"
   },
   "author": "Sergey Ukhlivanov",
   "license": "ISC",
   "dependencies": {
     "Express": "^3.0.1",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
     "express": "^4.16.3",
     "morgan": "^1.9.0",
     "uuid": "^3.3.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ukhlivanov/blog-app-challenge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ukhlivanov/blog-app-challenge/issues"
+  },
+  "homepage": "https://github.com/ukhlivanov/blog-app-challenge#readme"
 }

@@ -1,9 +1,2 @@
 language: node_js
 node_js: node
-deploy:
-  provider: heroku
-  api_key:
-    secure: fykg3KWTzhwVSioqIDozbxA4AxBYndI4e+CHe/ck/q4m8zeGMWADEUkX1wn6kCQLDLAEt7g7FPbBx8rxeUshP8n7uCL79hPPQxDEM2oSt7bEuw+Lwk1GkbzKzxrVBg9oyVQ6JNXFFgoZDY7a+7Y5AFkcZBIqwLEwjSIaENAo8LORmEmrp7LusI45ook2uoFocy5sF4w877YM9ItgI97EWLBb4brKNX5KpS728ATL7PZVY6nTdDLMqJbaDvRb3RQcMcS0Oa5NkildXPv4LE+k3p1iQGSyOlyyY6JJllwGrYk+rqNGc9I3Eu66VQjjjPtWFirtoFxclCNi7Yc78UuDkS91jUhOx2feyw89+q/+oLCJ3YkncMpRrAjOZt+dvJHAMbvkZuBQH3t7yh3JYneMbFaZuIgegQZ+AYuLP+uMtH61mDH5lfoWQc3YhbRT+ttVlbtc4Iv4WM4KHyyWyAqki8GarFtfrFie4Lj4R6KjqceAikEHl+8dGmfgKqpwArPVWUIFq8X7yG13qZoEGiPRLnQDWmugA7sgN5Gti0A5kGcSkrj9qZNiF/gJlimGhWh6SF0c0LLJID5x8Syhc4+NCQC9IUdZSAHEGpc520+Tinx+aqEgzygx9kC2Vx4ehYiS0oOligomaL/CU+W/qLIaPzsWasNyXB7jlLDtx1/l5uU=
-  app: still-scrubland-15865
-  on:
-    repo: ukhlivanov/blog-app-challenge

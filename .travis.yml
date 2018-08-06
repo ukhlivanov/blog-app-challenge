@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: Ze3q4FfKU0lTrvYBpVMRHHvBsGzzwE0VaczWHEaP/Lc66oEtqJtlRE1lzHDEMrnCgSj8KhOkpYGwhSTwXdXjXoQOVN1YZg1iyAhEf5f0WcNExhUCo0qUhUgTf85+imXNM/CP6MCu5J5CJa4jDsB+sgaWMhVIhvV8CDGuN5JlUEO3mTs5FIz0gERYi/eH+Vf56SfP/Ot4RHwK48h1lU8jsLfchTgIE4ysB13BLGIYwqgHtXfTAK3a0LC++fCEdsFjIaN6zrZJxCkZAIk7ptQfVK8btPmiMkWZ4YdJydTsN4cJ25Rfutf9zdI9LX4T2oJe0VOADiSkUv4bDB+tLlJFGlYS+OMyud9RCl1cgGNrzo8PIRIggwhdsj7kSgKwMj3KiCUFlwcn3VHBAL2rBv92O6ocJWOOqWKk34Az+BNTXDrxwY82qUtsUO4zNhdyxxrjvikkNH1DoTvoBzYEbzQGb0k2zpdR+DpnZeKoWyqdanwyc7QrIaMmUAJNhdHw5WQH37NTzcTu+Q9R6T5F9tvWMyisDryA+tjKrMlvHLKmiF5hxRIxhF91YSzFtgNfAcETQqw8SlzNIXG4LXlhht/+jBc7oSlR2kflrFcmvq2imv7V0/MNa6oe8vdrQ+8/6eSLLeUPpVrAyCimDqd76dXaCcomZGL/FFY0FkpY9+9eb14=
+  app: infinite-brook-59666
+  on:
+    repo: ukhlivanov/blog-app-challenge
